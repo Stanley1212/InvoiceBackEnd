@@ -8,8 +8,9 @@ namespace Invoice.Domain
     {
         public int ID { get; set; }
         public string UserCreated { get; set; }
-        public DateTimeOffset CreatedDate { get; set; }
+        public DateTimeOffset? CreatedDate { get; set; }
         public string UserUpdated { get; set; }
-        public DateTimeOffset UpdatedDate { get; set; }
+        public DateTimeOffset? UpdatedDate { get; set; }
+        public bool Active { get; set; }
     }
 }

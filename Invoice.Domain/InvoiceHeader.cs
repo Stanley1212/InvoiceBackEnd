@@ -4,11 +4,11 @@ using System.Text;
 
 namespace Invoice.Domain
 {
-    public class Invoice
+    public class InvoiceHeader : BaseEntity
     {
-        public int ID { get; set; }
         public int CustomerID { get; set; }
-        public DateTimeOffset Fecha { get; set; }
         public decimal Total { get; set; }
+        public Customer Customer { get; set; }
+        public IEnumerable<InvoiceDetail> InvoiceDetails { get; set; }
     }
 }

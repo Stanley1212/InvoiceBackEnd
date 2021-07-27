@@ -1,8 +1,10 @@
-﻿namespace Invoice.Domain
+﻿using System.Collections.Generic;
+
+namespace Invoice.Domain
 {
     public class Unit:BaseEntity
     {
-        public int ID { get; set; }
         public string Name { get; set; }
+        public ICollection<Item> Items{ get; set; }
     }
 }

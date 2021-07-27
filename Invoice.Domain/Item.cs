@@ -1,8 +1,7 @@
 ﻿namespace Invoice.Domain
 {
-    public class Item
+    public class Item:BaseEntity
     {
-        public int ID { get; set; }
         public string Name { get; set; }
         public decimal Stock { get; set; }
         public decimal SalePrice { get; set; }

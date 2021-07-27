@@ -1,0 +1,12 @@
+C:\Users\User\source\repos\Invoice\Invoice.Core\bin\Debug\netstandard2.1\Invoice.Core.deps.json
+C:\Users\User\source\repos\Invoice\Invoice.Core\bin\Debug\netstandard2.1\Invoice.Core.dll
+C:\Users\User\source\repos\Invoice\Invoice.Core\bin\Debug\netstandard2.1\Invoice.Core.pdb
+C:\Users\User\source\repos\Invoice\Invoice.Core\obj\Debug\netstandard2.1\Invoice.Core.csprojAssemblyReference.cache
+C:\Users\User\source\repos\Invoice\Invoice.Core\obj\Debug\netstandard2.1\Invoice.Core.AssemblyInfoInputs.cache
+C:\Users\User\source\repos\Invoice\Invoice.Core\obj\Debug\netstandard2.1\Invoice.Core.AssemblyInfo.cs
+C:\Users\User\source\repos\Invoice\Invoice.Core\obj\Debug\netstandard2.1\Invoice.Core.dll
+C:\Users\User\source\repos\Invoice\Invoice.Core\obj\Debug\netstandard2.1\Invoice.Core.pdb
+C:\Users\User\source\repos\Invoice\Invoice.Core\obj\Debug\netstandard2.1\Invoice.Core.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\Invoice\Invoice.Core\bin\Debug\netstandard2.1\Invoice.Domain.dll
+C:\Users\User\source\repos\Invoice\Invoice.Core\bin\Debug\netstandard2.1\Invoice.Domain.pdb
+C:\Users\User\source\repos\Invoice\Invoice.Core\obj\Debug\netstandard2.1\Invoice.Core.csproj.CopyComplete
