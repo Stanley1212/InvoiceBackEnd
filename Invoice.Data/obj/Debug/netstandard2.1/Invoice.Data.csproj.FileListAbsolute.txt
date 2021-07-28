@@ -12,3 +12,17 @@ C:\Users\User\source\repos\Invoice\Invoice.Data\obj\Debug\netstandard2.1\Invoice
 C:\Users\User\source\repos\Invoice\Invoice.Data\obj\Debug\netstandard2.1\Invoice.Data.csproj.CoreCompileInputs.cache
 C:\Users\User\source\repos\Invoice\Invoice.Data\bin\Debug\netstandard2.1\Invoice.Core.dll
 C:\Users\User\source\repos\Invoice\Invoice.Data\bin\Debug\netstandard2.1\Invoice.Core.pdb
+C:\Stanley Feliz\Pruebas\InvoiceBackEnd\Invoice.Data\bin\Debug\netstandard2.1\Invoice.Data.deps.json
+C:\Stanley Feliz\Pruebas\InvoiceBackEnd\Invoice.Data\bin\Debug\netstandard2.1\Invoice.Data.dll
+C:\Stanley Feliz\Pruebas\InvoiceBackEnd\Invoice.Data\bin\Debug\netstandard2.1\Invoice.Data.pdb
+C:\Stanley Feliz\Pruebas\InvoiceBackEnd\Invoice.Data\bin\Debug\netstandard2.1\Invoice.Core.dll
+C:\Stanley Feliz\Pruebas\InvoiceBackEnd\Invoice.Data\bin\Debug\netstandard2.1\Invoice.Domain.dll
+C:\Stanley Feliz\Pruebas\InvoiceBackEnd\Invoice.Data\bin\Debug\netstandard2.1\Invoice.Core.pdb
+C:\Stanley Feliz\Pruebas\InvoiceBackEnd\Invoice.Data\bin\Debug\netstandard2.1\Invoice.Domain.pdb
+C:\Stanley Feliz\Pruebas\InvoiceBackEnd\Invoice.Data\obj\Debug\netstandard2.1\Invoice.Data.csproj.AssemblyReference.cache
+C:\Stanley Feliz\Pruebas\InvoiceBackEnd\Invoice.Data\obj\Debug\netstandard2.1\Invoice.Data.AssemblyInfoInputs.cache
+C:\Stanley Feliz\Pruebas\InvoiceBackEnd\Invoice.Data\obj\Debug\netstandard2.1\Invoice.Data.AssemblyInfo.cs
+C:\Stanley Feliz\Pruebas\InvoiceBackEnd\Invoice.Data\obj\Debug\netstandard2.1\Invoice.Data.csproj.CoreCompileInputs.cache
+C:\Stanley Feliz\Pruebas\InvoiceBackEnd\Invoice.Data\obj\Debug\netstandard2.1\Invoice.Data.csproj.CopyComplete
+C:\Stanley Feliz\Pruebas\InvoiceBackEnd\Invoice.Data\obj\Debug\netstandard2.1\Invoice.Data.dll
+C:\Stanley Feliz\Pruebas\InvoiceBackEnd\Invoice.Data\obj\Debug\netstandard2.1\Invoice.Data.pdb

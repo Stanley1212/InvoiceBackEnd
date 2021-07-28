@@ -37,6 +37,8 @@ namespace Invoice.Data
             services.AddScoped<BaseService<Supplier>, SupplierService>();
             services.AddScoped<BaseService<Customer>, CustomerService>();
             services.AddScoped<BaseService<Item>, ItemService>();
+            services.AddScoped<BaseService<InvoiceHeader>, InvoiceService>();
+            services.AddScoped<BaseService<Bill>, BillService>();
             #endregion
         }
 
