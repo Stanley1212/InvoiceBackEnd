@@ -27,9 +27,9 @@ namespace Invoice.Controllers
         }
 
         [HttpGet]
-        public PagedData<Unit> Get([FromQuery] PaginationInfo pagination)
+        public PagedData<UnitListDto> Get([FromQuery] PaginationInfo pagination)
         {
-            return _service.GetAllWithPagination(pagination.pageSize, pagination.currentPage,null,null,null);
+            return _service.GetAllWithPagination<UnitListDto>(pagination.pageSize, pagination.currentPage,null,null,null);
         }
 
         // GET api/<UnitController>/5

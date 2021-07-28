@@ -11,7 +11,6 @@ namespace Invoice.Data
     {
         public MapperProfiles()
         {
-
             #region Unit
             CreateMap<UnitCreateDto, Unit>()
                 .ForMember(d => d.Name, o => o.MapFrom(s => s.Name))
@@ -24,6 +23,8 @@ namespace Invoice.Data
               .ForMember(d => d.UserUpdated, o => o.MapFrom(s => ""))
               .ForMember(d => d.UpdatedDate, o => o.MapFrom(s => DateTime.UtcNow))
               .ForMember(d => d.Active, o => o.MapFrom(s => true));
+
+            CreateMap<UnitListDto, Unit>().ReverseMap();
             #endregion
 
             #region Supplier
@@ -85,6 +86,50 @@ namespace Invoice.Data
                 .ForMember(s => s.UserUpdated, f => f.MapFrom(o => ""))
                 .ForMember(s => s.UpdatedDate, f => f.MapFrom(o => DateTime.UtcNow))
                 .ForMember(s => s.Active, f => f.MapFrom(o => true));
+            #endregion
+
+            #region Invoice
+            CreateMap<InvoiceHeaderCreateDto, InvoiceHeader>()
+                .ForMember(s => s.CustomerID, f => f.MapFrom(o => o.CustomerID))
+                .ForMember(s => s.Description, f => f.MapFrom(o => o.Description))
+                .ForMember(s => s.Discount, f => f.MapFrom(o => o.Discount))
+                .ForMember(s => s.Total, f => f.MapFrom(o => o.Total))
+                .ForMember(s => s.UserCreated, f => f.MapFrom(o => ""))
+                .ForMember(s => s.CreatedDate, f => f.MapFrom(o => DateTime.UtcNow))
+                .ForMember(s => s.Active, f => f.MapFrom(o => true));
+
+            CreateMap<InvoiceHeaderUpdateDto, InvoiceHeader>()
+                .ForMember(s => s.CustomerID, f => f.MapFrom(o => o.CustomerID))
+                .ForMember(s => s.Description, f => f.MapFrom(o => o.Description))
+                .ForMember(s => s.Discount, f => f.MapFrom(o => o.Discount))
+                .ForMember(s => s.Total, f => f.MapFrom(o => o.Total))
+                .ForMember(s => s.UserUpdated, f => f.MapFrom(o => ""))
+                .ForMember(s => s.UpdatedDate, f => f.MapFrom(o => DateTime.UtcNow))
+                .ForMember(s => s.Active, f => f.MapFrom(o => true));
+
+            CreateMap<InvoiceDetailCreateDto, InvoiceDetail>();
+            #endregion
+
+            #region Bill
+            CreateMap<BillCreateDto, Bill>()
+                .ForMember(s => s.SupplierID, f => f.MapFrom(o => o.SupplierID))
+                .ForMember(s => s.Description, f => f.MapFrom(o => o.Description))
+                .ForMember(s => s.Discount, f => f.MapFrom(o => o.Discount))
+                .ForMember(s => s.Total, f => f.MapFrom(o => o.Total))
+                .ForMember(s => s.UserCreated, f => f.MapFrom(o => ""))
+                .ForMember(s => s.CreatedDate, f => f.MapFrom(o => DateTime.UtcNow))
+                .ForMember(s => s.Active, f => f.MapFrom(o => true));
+
+            CreateMap<BillUpdateDto, Bill>()
+                .ForMember(s => s.SupplierID, f => f.MapFrom(o => o.SupplierID))
+                .ForMember(s => s.Description, f => f.MapFrom(o => o.Description))
+                .ForMember(s => s.Discount, f => f.MapFrom(o => o.Discount))
+                .ForMember(s => s.Total, f => f.MapFrom(o => o.Total))
+                .ForMember(s => s.UserUpdated, f => f.MapFrom(o => ""))
+                .ForMember(s => s.UpdatedDate, f => f.MapFrom(o => DateTime.UtcNow))
+                .ForMember(s => s.Active, f => f.MapFrom(o => true));
+
+            CreateMap<BillDetailDto, BillDetail>();
             #endregion
         }
 

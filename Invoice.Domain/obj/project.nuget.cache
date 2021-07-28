@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "HN3/i3+vcF1WrwvmwJjohkdl49CMcdfUdNVuesAFxZ9nZ8MxuhjKysNCaUyA1GQPWEv2nlkswwqU7mnzsuoC0A==",
+  "dgSpecHash": "CyctkJ/2TPYEhCL/vyGy/fJG+LLr/WTaGppVZyrBGMGmkNot0QSPnctYRj6nAhxNl6KHnE/p+v6Bd34uydLc0A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\User\\source\\repos\\Invoice\\Invoice.Domain\\Invoice.Domain.csproj",
+  "projectFilePath": "C:\\Stanley Feliz\\Pruebas\\InvoiceBackEnd\\Invoice.Domain\\Invoice.Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
