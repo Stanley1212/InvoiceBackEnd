@@ -1,4 +1,5 @@
 ﻿using Invoice.Domain;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,14 +8,14 @@ using System.Threading.Tasks;
 
 namespace Invoice.Core.Services
 {
-    public class UnitService : BaseService<Unit>
+    public class ItemService : BaseService<Item>
     {
-        public UnitService(IRepository<Unit> repository, IMapperExtension mapperExtension) 
+        public ItemService(IRepository<Item> repository, IMapperExtension mapperExtension)
             : base(repository, mapperExtension)
         {
         }
 
-        public override Task<int> Add(Unit data)
+        public override Task<int> Add(Item data)
         {
 
             var validate = _repository.Get(x => x.Name.Equals(data.Name)).FirstOrDefault();
@@ -22,6 +23,16 @@ namespace Invoice.Core.Services
             if (!(validate is null))
             {
                 throw new AppException(MessageCode.GeneralException, $"Ya existe un registro con el nombre {data.Name}");
+            }
+
+            if (data.UnitID < 1)
+            {
+                throw new AppException(MessageCode.RequieredField, $"Debe seleccionar una unidad de medida");
+            }
+
+            if (data.Type < 1 || data.Type > 2)
+            {
+                throw new AppException(MessageCode.RequieredField, $"Debe seleccionar un tipo de producto");
             }
 
             _repository.Insert(data);
@@ -36,12 +47,12 @@ namespace Invoice.Core.Services
             return Update(result);
         }
 
-        public override IEnumerable<Unit> GetAll()
+        public override IEnumerable<Item> GetAll()
         {
-            return _repository.Get(x => x.Active, x => x.OrderBy(x => x.ID));
+            return _repository.Get(x=>x.Active,x=>x.OrderBy(o=>o.ID),x=>x.Include(x=>x.Unit));
         }
 
-        public override Unit GetByID(object id)
+        public override Item GetByID(object id)
         {
             var result = _repository.Get(x => x.ID.Equals(id)).FirstOrDefault();
 
@@ -51,10 +62,9 @@ namespace Invoice.Core.Services
             }
 
             return result;
-
         }
 
-        public override Task<int> Update(Unit data)
+        public override Task<int> Update(Item data)
         {
             var validate = _repository.Get(x => x.Name.Equals(data)).FirstOrDefault();
 

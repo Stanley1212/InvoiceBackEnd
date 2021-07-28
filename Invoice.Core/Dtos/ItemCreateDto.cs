@@ -1,6 +1,10 @@
-﻿namespace Invoice.Domain
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace Invoice.Core.Dtos
 {
-    public class Item:BaseEntity
+    public class ItemCreateDto
     {
         public string Name { get; set; }
         public decimal Stock { get; set; }
@@ -8,6 +12,5 @@
         public decimal PurchasePrice { get; set; }
         public int Type { get; set; }
         public int UnitID { get; set; }
-        public Unit Unit { get; set; }
     }
 }

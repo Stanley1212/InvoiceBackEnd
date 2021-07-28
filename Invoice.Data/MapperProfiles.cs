@@ -11,6 +11,7 @@ namespace Invoice.Data
     {
         public MapperProfiles()
         {
+
             #region Unit
             CreateMap<UnitCreateDto, Unit>()
                 .ForMember(d => d.Name, o => o.MapFrom(s => s.Name))
@@ -25,6 +26,66 @@ namespace Invoice.Data
               .ForMember(d => d.Active, o => o.MapFrom(s => true));
             #endregion
 
+            #region Supplier
+            CreateMap<SupplierCreateDto, Supplier>()
+                .ForMember(s => s.Name, f => f.MapFrom(o => o.Name))
+                .ForMember(s => s.Phone, f => f.MapFrom(o => o.Phone))
+                .ForMember(s => s.Address, f => f.MapFrom(o => o.Address))
+                .ForMember(s => s.UserCreated, f => f.MapFrom(o => ""))
+                .ForMember(s => s.CreatedDate, f => f.MapFrom(o => DateTime.UtcNow))
+                .ForMember(s => s.Active, f => f.MapFrom(o => true));
+
+            CreateMap<SupplierUpdateDto, Supplier>()
+                .ForMember(s => s.Name, f => f.MapFrom(o => o.Name))
+                .ForMember(s => s.Phone, f => f.MapFrom(o => o.Phone))
+                .ForMember(s => s.Address, f => f.MapFrom(o => o.Address))
+                .ForMember(s => s.UserUpdated, f => f.MapFrom(o => ""))
+                .ForMember(s => s.UpdatedDate, f => f.MapFrom(o => DateTime.UtcNow))
+                .ForMember(s => s.Active, f => f.MapFrom(o => true));
+
+            #endregion
+
+            #region Customer
+            CreateMap<CustomerCreateDto, Customer>()
+                .ForMember(s => s.Name, f => f.MapFrom(o => o.Name))
+                .ForMember(s => s.Phone, f => f.MapFrom(o => o.Phone))
+                .ForMember(s => s.Address, f => f.MapFrom(o => o.Address))
+                .ForMember(s => s.UserCreated, f => f.MapFrom(o => ""))
+                .ForMember(s => s.CreatedDate, f => f.MapFrom(o => DateTime.UtcNow))
+                .ForMember(s => s.Active, f => f.MapFrom(o => true));
+
+            CreateMap<CustomerUpdateDto, Customer>()
+                .ForMember(s => s.Name, f => f.MapFrom(o => o.Name))
+                .ForMember(s => s.Phone, f => f.MapFrom(o => o.Phone))
+                .ForMember(s => s.Address, f => f.MapFrom(o => o.Address))
+                .ForMember(s => s.UserUpdated, f => f.MapFrom(o => ""))
+                .ForMember(s => s.UpdatedDate, f => f.MapFrom(o => DateTime.UtcNow))
+                .ForMember(s => s.Active, f => f.MapFrom(o => true));
+            #endregion
+
+            #region Item
+            CreateMap<ItemCreateDto, Item>()
+                .ForMember(s => s.Name, f => f.MapFrom(o => o.Name))
+                .ForMember(s => s.Stock, f => f.MapFrom(o => o.Stock))
+                .ForMember(s => s.SalePrice, f => f.MapFrom(o => o.SalePrice))
+                .ForMember(s => s.PurchasePrice, f => f.MapFrom(o => o.PurchasePrice))
+                .ForMember(s => s.UnitID, f => f.MapFrom(o => o.UnitID))
+                .ForMember(s => s.Type, f => f.MapFrom(o => o.Type))
+                .ForMember(s => s.UserCreated, f => f.MapFrom(o => ""))
+                .ForMember(s => s.CreatedDate, f => f.MapFrom(o => DateTime.UtcNow))
+                .ForMember(s => s.Active, f => f.MapFrom(o => true));
+
+            CreateMap<ItemUpdateDto, Item>()
+                .ForMember(s => s.Name, f => f.MapFrom(o => o.Name))
+                .ForMember(s => s.Stock, f => f.MapFrom(o => o.Stock))
+                .ForMember(s => s.SalePrice, f => f.MapFrom(o => o.SalePrice))
+                .ForMember(s => s.PurchasePrice, f => f.MapFrom(o => o.PurchasePrice))
+                .ForMember(s => s.UnitID, f => f.MapFrom(o => o.UnitID))
+                .ForMember(s => s.Type, f => f.MapFrom(o => o.Type))
+                .ForMember(s => s.UserUpdated, f => f.MapFrom(o => ""))
+                .ForMember(s => s.UpdatedDate, f => f.MapFrom(o => DateTime.UtcNow))
+                .ForMember(s => s.Active, f => f.MapFrom(o => true));
+            #endregion
         }
 
     }

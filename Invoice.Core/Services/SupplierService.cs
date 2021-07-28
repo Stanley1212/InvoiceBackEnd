@@ -7,21 +7,18 @@ using System.Threading.Tasks;
 
 namespace Invoice.Core.Services
 {
-    public class UnitService : BaseService<Unit>
+    public class SupplierService : BaseService<Supplier>
     {
-        public UnitService(IRepository<Unit> repository, IMapperExtension mapperExtension) 
-            : base(repository, mapperExtension)
+        public SupplierService(IRepository<Supplier> repository, IMapperExtension mapperExtension) : base(repository, mapperExtension)
         {
         }
 
-        public override Task<int> Add(Unit data)
+        public override Task<int> Add(Supplier data)
         {
 
-            var validate = _repository.Get(x => x.Name.Equals(data.Name)).FirstOrDefault();
-
-            if (!(validate is null))
+            if (string.IsNullOrEmpty(data.Name))
             {
-                throw new AppException(MessageCode.GeneralException, $"Ya existe un registro con el nombre {data.Name}");
+                throw new AppException(MessageCode.RequieredField, "El nombre es obligatorio.");
             }
 
             _repository.Insert(data);
@@ -32,16 +29,15 @@ namespace Invoice.Core.Services
         {
             var result = GetByID(id);
             result.Active = !result.Active;
-
             return Update(result);
         }
 
-        public override IEnumerable<Unit> GetAll()
+        public override IEnumerable<Supplier> GetAll()
         {
             return _repository.Get(x => x.Active, x => x.OrderBy(x => x.ID));
         }
 
-        public override Unit GetByID(object id)
+        public override Supplier GetByID(object id)
         {
             var result = _repository.Get(x => x.ID.Equals(id)).FirstOrDefault();
 
@@ -51,16 +47,13 @@ namespace Invoice.Core.Services
             }
 
             return result;
-
         }
 
-        public override Task<int> Update(Unit data)
+        public override Task<int> Update(Supplier data)
         {
-            var validate = _repository.Get(x => x.Name.Equals(data)).FirstOrDefault();
-
-            if (!(validate is null) && data.ID != validate.ID)
+            if (string.IsNullOrEmpty(data.Name))
             {
-                throw new AppException(MessageCode.GeneralException, $"Ya existe un registro con el nombre {data.Name}");
+                throw new AppException(MessageCode.RequieredField, "El nombre es obligatorio.");
             }
 
             _repository.Update(data);

@@ -70,6 +70,9 @@ C:\Users\User\source\repos\Invoice\Invoice\bin\Debug\netcoreapp3.1\Microsoft.Ope
 C:\Users\User\source\repos\Invoice\Invoice\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\User\source\repos\Invoice\Invoice\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\User\source\repos\Invoice\Invoice\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\User\source\repos\Invoice\Invoice\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\User\source\repos\Invoice\Invoice\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\User\source\repos\Invoice\Invoice\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
 C:\Users\User\source\repos\Invoice\Invoice\obj\Debug\netcoreapp3.1\Invoice.csproj.CoreCompileInputs.cache
 C:\Users\User\source\repos\Invoice\Invoice\obj\Debug\netcoreapp3.1\Invoice.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\User\source\repos\Invoice\Invoice\obj\Debug\netcoreapp3.1\Invoice.MvcApplicationPartsAssemblyInfo.cache

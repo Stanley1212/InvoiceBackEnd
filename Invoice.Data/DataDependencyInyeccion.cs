@@ -34,6 +34,9 @@ namespace Invoice.Data
 
             #region Service
             services.AddScoped<BaseService<Unit>, UnitService>();
+            services.AddScoped<BaseService<Supplier>, SupplierService>();
+            services.AddScoped<BaseService<Customer>, CustomerService>();
+            services.AddScoped<BaseService<Item>, ItemService>();
             #endregion
         }
 
