@@ -23,6 +23,8 @@ namespace Invoice.Data
               .ForMember(d => d.UserUpdated, o => o.MapFrom(s => ""))
               .ForMember(d => d.UpdatedDate, o => o.MapFrom(s => DateTime.UtcNow))
               .ForMember(d => d.Active, o => o.MapFrom(s => true));
+
+            CreateMap<UnitListDto, Unit>().ReverseMap();
             #endregion
 
             #region Supplier
