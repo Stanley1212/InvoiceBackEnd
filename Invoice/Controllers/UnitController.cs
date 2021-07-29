@@ -71,7 +71,7 @@ namespace Invoice.Controllers
         public async Task<AcceptedResult> Put([FromBody] UnitUpdateDto value)
         {
             var result = _service.GetByID(value.ID);
-            var data = _service.Map<UnitUpdateDto, Unit>(value,result);
+           var data = _service.Map<UnitUpdateDto, Unit>(value,result);
             await _service.Update(data);
             return Accepted();
         }

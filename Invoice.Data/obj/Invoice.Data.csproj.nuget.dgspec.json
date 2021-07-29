@@ -1,41 +1,38 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Stanley Feliz\\Pruebas\\InvoiceBackEnd\\Invoice.Data\\Invoice.Data.csproj": {}
+    "C:\\Users\\User\\source\\repos\\Invoice\\Invoice.Data\\Invoice.Data.csproj": {}
   },
   "projects": {
-    "C:\\Stanley Feliz\\Pruebas\\InvoiceBackEnd\\Invoice.Core\\Invoice.Core.csproj": {
+    "C:\\Users\\User\\source\\repos\\Invoice\\Invoice.Core\\Invoice.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Stanley Feliz\\Pruebas\\InvoiceBackEnd\\Invoice.Core\\Invoice.Core.csproj",
+        "projectUniqueName": "C:\\Users\\User\\source\\repos\\Invoice\\Invoice.Core\\Invoice.Core.csproj",
         "projectName": "Invoice.Core",
-        "projectPath": "C:\\Stanley Feliz\\Pruebas\\InvoiceBackEnd\\Invoice.Core\\Invoice.Core.csproj",
-        "packagesPath": "C:\\Users\\sfeliz\\.nuget\\packages\\",
-        "outputPath": "C:\\Stanley Feliz\\Pruebas\\InvoiceBackEnd\\Invoice.Core\\obj\\",
+        "projectPath": "C:\\Users\\User\\source\\repos\\Invoice\\Invoice.Core\\Invoice.Core.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\User\\source\\repos\\Invoice\\Invoice.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\sfeliz\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.1"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://lnxoctaxdev01/api/v4/groups/24/-/packages/nuget/index.json": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netstandard2.1": {
-            "targetAlias": "netstandard2.1",
             "projectReferences": {
-              "C:\\Stanley Feliz\\Pruebas\\InvoiceBackEnd\\Invoice.Domain\\Invoice.Domain.csproj": {
-                "projectPath": "C:\\Stanley Feliz\\Pruebas\\InvoiceBackEnd\\Invoice.Domain\\Invoice.Domain.csproj"
+              "C:\\Users\\User\\source\\repos\\Invoice\\Invoice.Domain\\Invoice.Domain.csproj": {
+                "projectPath": "C:\\Users\\User\\source\\repos\\Invoice\\Invoice.Domain\\Invoice.Domain.csproj"
               }
             }
           }
@@ -48,7 +45,6 @@
       },
       "frameworks": {
         "netstandard2.1": {
-          "targetAlias": "netstandard2.1",
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
@@ -70,45 +66,42 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.411\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Stanley Feliz\\Pruebas\\InvoiceBackEnd\\Invoice.Data\\Invoice.Data.csproj": {
+    "C:\\Users\\User\\source\\repos\\Invoice\\Invoice.Data\\Invoice.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Stanley Feliz\\Pruebas\\InvoiceBackEnd\\Invoice.Data\\Invoice.Data.csproj",
+        "projectUniqueName": "C:\\Users\\User\\source\\repos\\Invoice\\Invoice.Data\\Invoice.Data.csproj",
         "projectName": "Invoice.Data",
-        "projectPath": "C:\\Stanley Feliz\\Pruebas\\InvoiceBackEnd\\Invoice.Data\\Invoice.Data.csproj",
-        "packagesPath": "C:\\Users\\sfeliz\\.nuget\\packages\\",
-        "outputPath": "C:\\Stanley Feliz\\Pruebas\\InvoiceBackEnd\\Invoice.Data\\obj\\",
+        "projectPath": "C:\\Users\\User\\source\\repos\\Invoice\\Invoice.Data\\Invoice.Data.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\User\\source\\repos\\Invoice\\Invoice.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\sfeliz\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.1"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://lnxoctaxdev01/api/v4/groups/24/-/packages/nuget/index.json": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netstandard2.1": {
-            "targetAlias": "netstandard2.1",
             "projectReferences": {
-              "C:\\Stanley Feliz\\Pruebas\\InvoiceBackEnd\\Invoice.Core\\Invoice.Core.csproj": {
-                "projectPath": "C:\\Stanley Feliz\\Pruebas\\InvoiceBackEnd\\Invoice.Core\\Invoice.Core.csproj"
+              "C:\\Users\\User\\source\\repos\\Invoice\\Invoice.Core\\Invoice.Core.csproj": {
+                "projectPath": "C:\\Users\\User\\source\\repos\\Invoice\\Invoice.Core\\Invoice.Core.csproj"
               },
-              "C:\\Stanley Feliz\\Pruebas\\InvoiceBackEnd\\Invoice.Domain\\Invoice.Domain.csproj": {
-                "projectPath": "C:\\Stanley Feliz\\Pruebas\\InvoiceBackEnd\\Invoice.Domain\\Invoice.Domain.csproj"
+              "C:\\Users\\User\\source\\repos\\Invoice\\Invoice.Domain\\Invoice.Domain.csproj": {
+                "projectPath": "C:\\Users\\User\\source\\repos\\Invoice\\Invoice.Domain\\Invoice.Domain.csproj"
               }
             }
           }
@@ -121,7 +114,6 @@
       },
       "frameworks": {
         "netstandard2.1": {
-          "targetAlias": "netstandard2.1",
           "dependencies": {
             "AutoMapper": {
               "target": "Package",
@@ -153,39 +145,36 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.411\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Stanley Feliz\\Pruebas\\InvoiceBackEnd\\Invoice.Domain\\Invoice.Domain.csproj": {
+    "C:\\Users\\User\\source\\repos\\Invoice\\Invoice.Domain\\Invoice.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Stanley Feliz\\Pruebas\\InvoiceBackEnd\\Invoice.Domain\\Invoice.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\User\\source\\repos\\Invoice\\Invoice.Domain\\Invoice.Domain.csproj",
         "projectName": "Invoice.Domain",
-        "projectPath": "C:\\Stanley Feliz\\Pruebas\\InvoiceBackEnd\\Invoice.Domain\\Invoice.Domain.csproj",
-        "packagesPath": "C:\\Users\\sfeliz\\.nuget\\packages\\",
-        "outputPath": "C:\\Stanley Feliz\\Pruebas\\InvoiceBackEnd\\Invoice.Domain\\obj\\",
+        "projectPath": "C:\\Users\\User\\source\\repos\\Invoice\\Invoice.Domain\\Invoice.Domain.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\User\\source\\repos\\Invoice\\Invoice.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\sfeliz\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.1"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://lnxoctaxdev01/api/v4/groups/24/-/packages/nuget/index.json": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netstandard2.1": {
-            "targetAlias": "netstandard2.1",
             "projectReferences": {}
           }
         },
@@ -197,7 +186,6 @@
       },
       "frameworks": {
         "netstandard2.1": {
-          "targetAlias": "netstandard2.1",
           "imports": [
             "net461",
             "net462",
@@ -213,7 +201,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.411\\RuntimeIdentifierGraph.json"
         }
       }
     }
