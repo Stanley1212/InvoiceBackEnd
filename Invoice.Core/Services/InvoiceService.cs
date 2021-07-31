@@ -8,25 +8,45 @@ namespace Invoice.Core.Services
 {
     public class InvoiceService : BaseService<InvoiceHeader>
     {
-        public InvoiceService(IRepository<InvoiceHeader> repository, IMapperExtension mapperExtension) : base(repository, mapperExtension)
+        private readonly IRepository<Item> _itemService;
+
+        public InvoiceService(IRepository<InvoiceHeader> repository, IMapperExtension mapperExtension,
+            IRepository<Item> itemService) : base(repository, mapperExtension)
         {
+            this._itemService = itemService;
         }
 
-        public override Task<int> Add(InvoiceHeader data)
+        public async override Task<int> Add(InvoiceHeader data)
         {
+                if (data.CustomerID < 1)
+                {
+                    throw new AppException(MessageCode.RequieredField, "Debe seleccionar un cliente.");
+                }
 
-            if (data.CustomerID < 1)
-            {
-                throw new AppException(MessageCode.RequieredField, "Debe seleccionar un cliente.");
-            }
+                foreach (var InvoiceDetail in data.InvoiceDetails)
+                {
+                    var item = _itemService.Get(x => x.ID.Equals(InvoiceDetail.ItemID)).FirstOrDefault();
 
-            foreach (var InvoiceDetail in data.InvoiceDetails)
-            {
-                //InvoiceDetail.InvoiceID = data.ID;
-            }
+                    if (item is null)
+                    {
+                        throw new AppException(MessageCode.GeneralException, $"EL articulo ID {InvoiceDetail.ItemID} no Existe");
+                    }
 
-            _repository.Insert(data);
-            return _repository.Commit();
+                    if (item.Stock < InvoiceDetail.Quantity)
+                    {
+                        throw new AppException(MessageCode.GeneralException, $"EL articulo {item.Name} no posee cantidad suficiente");
+                    }
+
+                    item.Stock = item.Stock - InvoiceDetail.Quantity;
+
+                    _itemService.Update(item);
+                }
+
+               await _itemService.Commit();
+
+                _repository.Insert(data);
+                return await _repository.Commit();
+           
         }
 
         public override Task<int> Delete(object id)

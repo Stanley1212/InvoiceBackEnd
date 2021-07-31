@@ -10,11 +10,17 @@ namespace Invoice.Core.Services
 {
     public class BillService : BaseService<Bill>
     {
-        public BillService(IRepository<Bill> repository, IMapperExtension mapperExtension) : base(repository, mapperExtension)
+
+        private readonly IRepository<Item> _itemService;
+
+        public BillService(IRepository<Bill> repository, IMapperExtension mapperExtension,
+            IRepository<Item> itemService) : base(repository, mapperExtension)
         {
+            this._itemService = itemService;
+
         }
 
-        public override Task<int> Add(Bill data)
+        public async override Task<int> Add(Bill data)
         {
 
             if (data.SupplierID < 1)
@@ -24,11 +30,22 @@ namespace Invoice.Core.Services
 
             foreach (var BillDetail in data.BillDetails)
             {
-                //InvoiceDetail.InvoiceID = data.ID;
+                var item = _itemService.Get(x => x.ID.Equals(BillDetail.ItemID)).FirstOrDefault();
+
+                if (item is null)
+                {
+                    throw new AppException(MessageCode.GeneralException, $"EL articulo ID {BillDetail.ItemID} no Existe");
+                }
+
+                item.Stock = item.Stock + BillDetail.Quantity;
+
+                _itemService.Update(item);
             }
 
+            await _itemService.Commit();
+
             _repository.Insert(data);
-            return _repository.Commit();
+            return await _repository.Commit();
         }
 
         public override Task<int> Delete(object id)
