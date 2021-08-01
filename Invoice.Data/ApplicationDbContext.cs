@@ -19,5 +19,7 @@ namespace Invoice.Data
         public DbSet<Bill> Bills { get; set; }
         public DbSet<BillDetail> BillDetails { get; set; }
         public DbSet<Supplier> Suppliers { get; set; }
+        public DbSet<Production> Productions { get; set; }
+        public DbSet<ProductionDetail> ProductionDetails { get; set; }
     }
 }
