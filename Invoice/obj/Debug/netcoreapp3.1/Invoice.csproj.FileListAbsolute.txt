@@ -82,8 +82,6 @@ C:\Stanley Feliz\Pruebas\InvoiceBackEnd\Invoice\obj\Debug\netcoreapp3.1\Invoice.
 C:\Stanley Feliz\Pruebas\InvoiceBackEnd\Invoice\obj\Debug\netcoreapp3.1\Invoice.csproj.CoreCompileInputs.cache
 C:\Stanley Feliz\Pruebas\InvoiceBackEnd\Invoice\obj\Debug\netcoreapp3.1\Invoice.MvcApplicationPartsAssemblyInfo.cs
 C:\Stanley Feliz\Pruebas\InvoiceBackEnd\Invoice\obj\Debug\netcoreapp3.1\Invoice.MvcApplicationPartsAssemblyInfo.cache
-C:\Stanley Feliz\Pruebas\InvoiceBackEnd\Invoice\obj\Debug\netcoreapp3.1\Invoice.dll
-C:\Stanley Feliz\Pruebas\InvoiceBackEnd\Invoice\obj\Debug\netcoreapp3.1\Invoice.pdb
 C:\Stanley Feliz\Pruebas\InvoiceBackEnd\Invoice\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Stanley Feliz\Pruebas\InvoiceBackEnd\Invoice\bin\Debug\netcoreapp3.1\appsettings.json
 C:\Stanley Feliz\Pruebas\InvoiceBackEnd\Invoice\bin\Debug\netcoreapp3.1\Invoice.exe
@@ -153,4 +151,6 @@ C:\Stanley Feliz\Pruebas\InvoiceBackEnd\Invoice\obj\Debug\netcoreapp3.1\staticwe
 C:\Stanley Feliz\Pruebas\InvoiceBackEnd\Invoice\obj\Debug\netcoreapp3.1\scopedcss\bundle\Invoice.styles.css
 C:\Stanley Feliz\Pruebas\InvoiceBackEnd\Invoice\obj\Debug\netcoreapp3.1\Invoice.RazorTargetAssemblyInfo.cache
 C:\Stanley Feliz\Pruebas\InvoiceBackEnd\Invoice\obj\Debug\netcoreapp3.1\Invoice.csproj.CopyComplete
+C:\Stanley Feliz\Pruebas\InvoiceBackEnd\Invoice\obj\Debug\netcoreapp3.1\Invoice.dll
+C:\Stanley Feliz\Pruebas\InvoiceBackEnd\Invoice\obj\Debug\netcoreapp3.1\Invoice.pdb
 C:\Stanley Feliz\Pruebas\InvoiceBackEnd\Invoice\obj\Debug\netcoreapp3.1\Invoice.genruntimeconfig.cache

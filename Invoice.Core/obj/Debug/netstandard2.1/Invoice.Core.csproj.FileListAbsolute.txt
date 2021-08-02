@@ -10,15 +10,15 @@ C:\Users\User\source\repos\Invoice\Invoice.Core\obj\Debug\netstandard2.1\Invoice
 C:\Users\User\source\repos\Invoice\Invoice.Core\bin\Debug\netstandard2.1\Invoice.Domain.dll
 C:\Users\User\source\repos\Invoice\Invoice.Core\bin\Debug\netstandard2.1\Invoice.Domain.pdb
 C:\Users\User\source\repos\Invoice\Invoice.Core\obj\Debug\netstandard2.1\Invoice.Core.csproj.CopyComplete
-C:\Stanley Feliz\Pruebas\InvoiceBackEnd\Invoice.Core\obj\Debug\netstandard2.1\Invoice.Core.csproj.AssemblyReference.cache
-C:\Stanley Feliz\Pruebas\InvoiceBackEnd\Invoice.Core\obj\Debug\netstandard2.1\Invoice.Core.AssemblyInfoInputs.cache
-C:\Stanley Feliz\Pruebas\InvoiceBackEnd\Invoice.Core\obj\Debug\netstandard2.1\Invoice.Core.AssemblyInfo.cs
-C:\Stanley Feliz\Pruebas\InvoiceBackEnd\Invoice.Core\obj\Debug\netstandard2.1\Invoice.Core.csproj.CoreCompileInputs.cache
-C:\Stanley Feliz\Pruebas\InvoiceBackEnd\Invoice.Core\obj\Debug\netstandard2.1\Invoice.Core.dll
-C:\Stanley Feliz\Pruebas\InvoiceBackEnd\Invoice.Core\obj\Debug\netstandard2.1\Invoice.Core.pdb
 C:\Stanley Feliz\Pruebas\InvoiceBackEnd\Invoice.Core\bin\Debug\netstandard2.1\Invoice.Core.deps.json
 C:\Stanley Feliz\Pruebas\InvoiceBackEnd\Invoice.Core\bin\Debug\netstandard2.1\Invoice.Core.dll
 C:\Stanley Feliz\Pruebas\InvoiceBackEnd\Invoice.Core\bin\Debug\netstandard2.1\Invoice.Core.pdb
 C:\Stanley Feliz\Pruebas\InvoiceBackEnd\Invoice.Core\bin\Debug\netstandard2.1\Invoice.Domain.dll
 C:\Stanley Feliz\Pruebas\InvoiceBackEnd\Invoice.Core\bin\Debug\netstandard2.1\Invoice.Domain.pdb
+C:\Stanley Feliz\Pruebas\InvoiceBackEnd\Invoice.Core\obj\Debug\netstandard2.1\Invoice.Core.csproj.AssemblyReference.cache
+C:\Stanley Feliz\Pruebas\InvoiceBackEnd\Invoice.Core\obj\Debug\netstandard2.1\Invoice.Core.AssemblyInfoInputs.cache
+C:\Stanley Feliz\Pruebas\InvoiceBackEnd\Invoice.Core\obj\Debug\netstandard2.1\Invoice.Core.AssemblyInfo.cs
+C:\Stanley Feliz\Pruebas\InvoiceBackEnd\Invoice.Core\obj\Debug\netstandard2.1\Invoice.Core.csproj.CoreCompileInputs.cache
 C:\Stanley Feliz\Pruebas\InvoiceBackEnd\Invoice.Core\obj\Debug\netstandard2.1\Invoice.Core.csproj.CopyComplete
+C:\Stanley Feliz\Pruebas\InvoiceBackEnd\Invoice.Core\obj\Debug\netstandard2.1\Invoice.Core.dll
+C:\Stanley Feliz\Pruebas\InvoiceBackEnd\Invoice.Core\obj\Debug\netstandard2.1\Invoice.Core.pdb

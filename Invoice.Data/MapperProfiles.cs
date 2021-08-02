@@ -7,7 +7,7 @@ using System.Text;
 
 namespace Invoice.Data
 {
-   public class MapperProfiles: Profile
+    public class MapperProfiles : Profile
     {
         public MapperProfiles()
         {
@@ -131,7 +131,25 @@ namespace Invoice.Data
 
             CreateMap<BillDetailDto, BillDetail>();
             #endregion
-        }
 
+            #region Production
+            CreateMap<ProductionCreateDto, Production>()
+                .ForMember(s => s.ItemID, f => f.MapFrom(o => o.ItemID))
+                .ForMember(s => s.Quantity, f => f.MapFrom(o => o.Quantity))
+                .ForMember(s => s.UserCreated, f => f.MapFrom(o => ""))
+                .ForMember(s => s.CreatedDate, f => f.MapFrom(o => DateTime.UtcNow))
+                .ForMember(s => s.Active, f => f.MapFrom(o => true));
+
+            CreateMap<ProductioUpdateDto, Production>()
+                .ForMember(s => s.ItemID, f => f.MapFrom(o => o.ItemID))
+                .ForMember(s => s.Quantity, f => f.MapFrom(o => o.Quantity))
+                .ForMember(s => s.UserUpdated, f => f.MapFrom(o => ""))
+                .ForMember(s => s.UpdatedDate, f => f.MapFrom(o => DateTime.UtcNow))
+                .ForMember(s => s.Active, f => f.MapFrom(o => true));
+
+            CreateMap<ProductionDetailDto, ProductionDetail>();
+            #endregion
+        }
     }
+
 }

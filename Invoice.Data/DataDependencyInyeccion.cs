@@ -30,6 +30,7 @@ namespace Invoice.Data
             services.AddScoped<IRepository<InvoiceHeader>, BaseRepository<InvoiceHeader>>();
             services.AddScoped<IRepository<InvoiceDetail>, BaseRepository<InvoiceDetail>>();
             services.AddScoped<IRepository<Item>, BaseRepository<Item>>();
+            services.AddScoped<IRepository<Production>, BaseRepository<Production>>();
             #endregion
 
             #region Service
@@ -39,6 +40,7 @@ namespace Invoice.Data
             services.AddScoped<BaseService<Item>, ItemService>();
             services.AddScoped<BaseService<InvoiceHeader>, InvoiceService>();
             services.AddScoped<BaseService<Bill>, BillService>();
+            services.AddScoped<BaseService<Production>, ProductionService>();
             #endregion
         }
 

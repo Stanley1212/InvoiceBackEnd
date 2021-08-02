@@ -12,6 +12,5 @@ namespace Invoice.Domain
         public decimal Quantity { get; set; }
 
         public Item Item { get; set; }
-        public Production Production { get; set; }
     }
 }
