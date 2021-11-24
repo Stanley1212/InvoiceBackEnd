@@ -17,7 +17,6 @@ namespace Invoice.Core.Services
             IRepository<Item> itemService) : base(repository, mapperExtension)
         {
             this._itemService = itemService;
-
         }
 
         public async override Task<int> Add(Bill data)
@@ -62,7 +61,7 @@ namespace Invoice.Core.Services
 
         public override Bill GetByID(object id)
         {
-            var result = _repository.Get(x => x.ID.Equals(id)).FirstOrDefault();
+            var result = _repository.Get(x => x.ID.Equals(id),null, x => x.Include(x => x.Supplier).Include(x => x.BillDetails).ThenInclude(x => x.Item).ThenInclude(x => x.Unit)).FirstOrDefault();
 
             if (result is null)
             {

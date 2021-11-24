@@ -44,6 +44,16 @@ namespace Invoice.Controllers
             return _service.GetAll();
         }
 
+        [HttpGet("Test")]
+        public IEnumerable<object> GetAllProduct()
+        {
+            return _service.GetAll()
+                .Where(x=>x.Type.Equals(0))
+                .Select(
+                         x => x.InvoiceDetails.Select(y=> new { y.Item.Name, y.Quantity })                        
+                );
+        }
+
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(PagedData<InvoiceHeader>))]
         [HttpGet("search")]
         public PagedData<InvoiceHeader> Search([FromQuery] PaginationInfo pagination, [FromQuery] string name)

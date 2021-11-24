@@ -8,6 +8,7 @@ namespace Invoice.Core.Dtos
     {
         public int ID { get; set; }
         public int CustomerID { get; set; }
+        public int Type { get; set; }
         public string Description { get; set; }
         public decimal Discount { get; set; }
         public decimal Total { get; set; }

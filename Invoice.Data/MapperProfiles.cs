@@ -91,6 +91,7 @@ namespace Invoice.Data
             #region Invoice
             CreateMap<InvoiceHeaderCreateDto, InvoiceHeader>()
                 .ForMember(s => s.CustomerID, f => f.MapFrom(o => o.CustomerID))
+                .ForMember(s => s.Type, f => f.MapFrom(o => o.Type))
                 .ForMember(s => s.Description, f => f.MapFrom(o => o.Description))
                 .ForMember(s => s.Discount, f => f.MapFrom(o => o.Discount))
                 .ForMember(s => s.Total, f => f.MapFrom(o => o.Total))
@@ -100,6 +101,7 @@ namespace Invoice.Data
 
             CreateMap<InvoiceHeaderUpdateDto, InvoiceHeader>()
                 .ForMember(s => s.CustomerID, f => f.MapFrom(o => o.CustomerID))
+                .ForMember(s => s.Type, f => f.MapFrom(o => o.Type))
                 .ForMember(s => s.Description, f => f.MapFrom(o => o.Description))
                 .ForMember(s => s.Discount, f => f.MapFrom(o => o.Discount))
                 .ForMember(s => s.Total, f => f.MapFrom(o => o.Total))

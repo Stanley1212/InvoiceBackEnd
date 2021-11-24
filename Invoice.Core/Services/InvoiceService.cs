@@ -63,7 +63,7 @@ namespace Invoice.Core.Services
 
         public override InvoiceHeader GetByID(object id)
         {
-            var result = _repository.Get(x => x.ID.Equals(id)).FirstOrDefault();
+            var result = _repository.Get(x => x.ID.Equals(id),null, x => x.Include(x => x.Customer).Include(x => x.InvoiceDetails).ThenInclude(x => x.Item).ThenInclude(x => x.Unit)).FirstOrDefault();
 
             if (result is null)
             {
